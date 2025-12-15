@@ -1,0 +1,174 @@
+.guide-login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%);
+  padding: 20px;
+}
+
+.guide-login-card {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 440px;
+  overflow: hidden;
+  animation: slideUp 0.5s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.guide-login-header {
+  background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%);
+  padding: 40px 30px;
+  text-align: center;
+  color: white;
+}
+
+.guide-login-icon {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.guide-login-header h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.guide-login-header p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.guide-login-form {
+  padding: 40px 30px;
+}
+
+.guide-error-message {
+  background-color: #fee2e2;
+  border: 1px solid #ef4444;
+  border-radius: 8px;
+  padding: 12px 16px;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #991b1b;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.guide-form-group {
+  margin-bottom: 24px;
+}
+
+.guide-form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 8px;
+}
+
+.guide-input-wrapper {
+  position: relative;
+}
+
+.guide-input-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.guide-input-wrapper input {
+  width: 100%;
+  padding: 12px 12px 12px 44px;
+  border: 2px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.guide-input-wrapper input:focus {
+  border-color: #0ea5e9;
+}
+
+.guide-login-button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #0ea5e9 0%, #06b6d4 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.4);
+  font-family: inherit;
+}
+
+.guide-login-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(14, 165, 233, 0.5);
+}
+
+.guide-login-button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+.guide-demo-credentials {
+  margin-top: 24px;
+  padding: 16px;
+  background-color: #f0f9ff;
+  border-radius: 8px;
+  border: 1px solid #bae6fd;
+}
+
+.guide-demo-title {
+  font-size: 12px;
+  color: #075985;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.guide-demo-credentials p {
+  font-size: 12px;
+  color: #0c4a6e;
+  margin-bottom: 4px;
+}
+
+.guide-login-footer {
+  padding: 20px 30px;
+  background-color: #f9fafb;
+  border-top: 1px solid #e5e7eb;
+  text-align: center;
+}
+
+.guide-login-footer p {
+  font-size: 13px;
+  color: #6b7280;
+}
